@@ -1,0 +1,24 @@
+{
+  "name": "DeleteMediaRobot",
+  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+  "keywords": ["telegram", "best", "Media", "Deleting", "Robot"],
+  "website": "https://github.com/m4mallu/DeleteMediaRobot",
+  "repository": "https://github.com/m4mallu/DeleteMediaRobot",
+  "env": {
+        "APP_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
+        "TG_BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true},
+        "AUTH_USERS": {"description": "List of userIDs separated by <space>","required": true},
+        "TG_USER_SESSION": {"description": "String Session from an admin user","required": true},
+        "ENV": {"description": "Set this to ANYTHING","value": "ANYTHING"}
+  },
+  "buildpacks": [
+    {"url": "heroku/python"}
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}

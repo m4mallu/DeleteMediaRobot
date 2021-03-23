@@ -10,7 +10,7 @@
         "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
         "TG_BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true},
         "AUTH_USERS": {"description": "List of userIDs separated by <space>","required": true},
-        "TG_USER_SESSION": {"description": "String Session from an admin user","required": true},
+        "TG_USER_SESSION": {"description": "String Session from an admin user. Go to: t.ly/GxsB ","required": true},
         "ENV": {"description": "Set this to ANYTHING","value": "ANYTHING"}
   },
   "buildpacks": [
